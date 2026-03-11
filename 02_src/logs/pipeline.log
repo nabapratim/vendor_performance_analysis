@@ -1,0 +1,808 @@
+2026-02-15 13:08:49,461|__main__|INFO|Pipeline started
+2026-02-15 13:08:49,462|__main__|INFO|Discovered purchases.csv--->stg_purchases
+2026-02-15 13:08:49,463|__main__|ERROR|Pipeline failed
+Traceback (most recent call last):
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\main.py", line 96, in main
+    run_csv_ingestion()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\main.py", line 48, in run_csv_ingestion
+    ingestion_csv(file, table)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\ingestion.py", line 24, in ingestion_csv
+    engine = get_engine()
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\db.py", line 11, in get_engine
+    user = os.getenva("DB_USER")
+           ^^^^^^^^^^
+AttributeError: module 'os' has no attribute 'getenva'. Did you mean: 'getenv'?
+2026-02-15 13:09:48,977|__main__|INFO|Pipeline started
+2026-02-15 13:09:48,978|__main__|INFO|Discovered purchases.csv--->stg_purchases
+2026-02-15 13:09:48,979|__main__|ERROR|Pipeline failed
+Traceback (most recent call last):
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\main.py", line 96, in main
+    run_csv_ingestion()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\main.py", line 48, in run_csv_ingestion
+    ingestion_csv(file, table)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\ingestion.py", line 24, in ingestion_csv
+    engine = get_engine()
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\db.py", line 21, in get_engine
+    engine = create_engine(url,
+                           pool_size=5,
+                           max_overflow=10,
+                           pool_pre_ping=True)
+  File "<string>", line 2, in create_engine
+  File "C:\Users\nabap\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\util\deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+  File "C:\Users\nabap\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\create.py", line 564, in create_engine
+    u = _url.make_url(url)
+  File "C:\Users\nabap\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\url.py", line 856, in make_url
+    return _parse_url(name_or_url)
+  File "C:\Users\nabap\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\url.py", line 917, in _parse_url
+    components["port"] = int(components["port"])
+                         ~~~^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'None'
+2026-02-15 13:18:24,450|__main__|INFO|Pipeline started
+2026-02-15 13:18:24,451|__main__|INFO|Discovered purchases.csv--->stg_purchases
+2026-02-15 13:18:24,452|__main__|ERROR|Pipeline failed
+Traceback (most recent call last):
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\main.py", line 96, in main
+    run_csv_ingestion()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\main.py", line 48, in run_csv_ingestion
+    ingestion_csv(file, table)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\ingestion.py", line 24, in ingestion_csv
+    engine = get_engine()
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\db.py", line 21, in get_engine
+    engine = create_engine(url,
+                           pool_size=5,
+                           max_overflow=10,
+                           pool_pre_ping=True)
+  File "<string>", line 2, in create_engine
+  File "C:\Users\nabap\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\util\deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+  File "C:\Users\nabap\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\create.py", line 564, in create_engine
+    u = _url.make_url(url)
+  File "C:\Users\nabap\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\url.py", line 856, in make_url
+    return _parse_url(name_or_url)
+  File "C:\Users\nabap\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\url.py", line 917, in _parse_url
+    components["port"] = int(components["port"])
+                         ~~~^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'None'
+2026-02-15 13:28:37,676|__main__|INFO|Pipeline started
+2026-02-15 13:28:37,677|__main__|INFO|Discovered purchases.csv--->stg_purchases
+2026-02-15 13:28:37,679|__main__|ERROR|Pipeline failed
+Traceback (most recent call last):
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\main.py", line 96, in main
+    run_csv_ingestion()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\main.py", line 48, in run_csv_ingestion
+    ingestion_csv(file, table)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\ingestion.py", line 24, in ingestion_csv
+    engine = get_engine()
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\db.py", line 21, in get_engine
+    engine = create_engine(url,
+                           pool_size=5,
+                           max_overflow=10,
+                           pool_pre_ping=True)
+  File "<string>", line 2, in create_engine
+  File "C:\Users\nabap\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\util\deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+  File "C:\Users\nabap\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\create.py", line 564, in create_engine
+    u = _url.make_url(url)
+  File "C:\Users\nabap\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\url.py", line 856, in make_url
+    return _parse_url(name_or_url)
+  File "C:\Users\nabap\AppData\Local\Programs\Python\Python314\Lib\site-packages\sqlalchemy\engine\url.py", line 917, in _parse_url
+    components["port"] = int(components["port"])
+                         ~~~^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'None'
+2026-02-15 13:40:46,575|__main__|INFO|Pipeline started
+2026-02-15 13:40:46,575|__main__|INFO|Discovered purchases.csv--->stg_purchases
+2026-02-15 13:40:46,576|db|ERROR|url not set
+2026-02-15 13:40:46,576|__main__|ERROR|Pipeline failed
+Traceback (most recent call last):
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\main.py", line 96, in main
+    run_csv_ingestion()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\main.py", line 48, in run_csv_ingestion
+    ingestion_csv(file, table)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\ingestion.py", line 24, in ingestion_csv
+    engine = get_engine()
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\db.py", line 20, in get_engine
+    raise ValueError("url missing")
+ValueError: url missing
+2026-02-15 13:43:11,785|__main__|INFO|Pipeline started
+2026-02-15 13:43:11,785|__main__|INFO|Discovered purchases.csv--->stg_purchases
+2026-02-15 13:43:11,786|db|ERROR|url not set
+2026-02-15 13:43:11,786|__main__|ERROR|Pipeline failed
+Traceback (most recent call last):
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\main.py", line 96, in main
+    run_csv_ingestion()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\main.py", line 48, in run_csv_ingestion
+    ingestion_csv(file, table)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\ingestion.py", line 24, in ingestion_csv
+    engine = get_engine()
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\db.py", line 20, in get_engine
+    raise ValueError("url missing")
+ValueError: url missing
+2026-02-15 17:20:25,714|__main__|INFO|Pipeline started
+2026-02-15 17:20:25,715|__main__|INFO|Discovered purchases.csv--->stg_purchases
+2026-02-15 17:20:25,716|db|ERROR|url not set
+2026-02-15 17:20:25,716|__main__|ERROR|Pipeline failed
+Traceback (most recent call last):
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\main.py", line 96, in main
+    run_csv_ingestion()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\main.py", line 48, in run_csv_ingestion
+    ingestion_csv(file, table)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\ingestion.py", line 24, in ingestion_csv
+    engine = get_engine()
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\db.py", line 20, in get_engine
+    raise ValueError("url missing")
+ValueError: url missing
+2026-02-15 17:22:35,562|__main__|INFO|Pipeline started
+2026-02-15 17:22:35,563|__main__|INFO|Discovered purchases.csv--->stg_purchases
+2026-02-15 17:22:35,563|db|ERROR|url not set
+2026-02-15 17:22:35,564|__main__|ERROR|Pipeline failed
+Traceback (most recent call last):
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\main.py", line 96, in main
+    run_csv_ingestion()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\main.py", line 48, in run_csv_ingestion
+    ingestion_csv(file, table)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\ingestion.py", line 24, in ingestion_csv
+    engine = get_engine()
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\db.py", line 20, in get_engine
+    raise ValueError("url missing")
+ValueError: url missing
+2026-02-15 17:36:51,392|__main__|INFO|Pipeline started
+2026-02-15 17:36:51,393|__main__|INFO|Discovered purchases.csv--->stg_purchases
+2026-02-15 17:36:51,394|db|ERROR|url not set
+2026-02-15 17:36:51,394|__main__|ERROR|Pipeline failed
+Traceback (most recent call last):
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\main.py", line 96, in main
+    run_csv_ingestion()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\main.py", line 48, in run_csv_ingestion
+    ingestion_csv(file, table)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\ingestion.py", line 24, in ingestion_csv
+    engine = get_engine()
+  File "C:\Users\nabap\Vendor_Performance_Analysis\02_src\db.py", line 20, in get_engine
+    raise ValueError("url missing")
+ValueError: url missing
+2026-02-15 18:08:41,702|__main__|INFO|Pipeline started
+2026-02-15 18:08:41,704|__main__|INFO|Discovered purchases.csv--->stg_purchases
+2026-02-15 18:08:41,797|db|INFO|Database Engine Created
+2026-02-15 18:08:41,798|ingestion|INFO|ingesting ..\00_data\raw\purchases.csv--> stg_purchases
+2026-02-15 18:08:41,923|ingestion|INFO|..\00_data\raw\purchases.csv| chunk1
+2026-02-15 18:08:57,826|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:08:57,993|ingestion|INFO|..\00_data\raw\purchases.csv| chunk2
+2026-02-15 18:09:14,135|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:09:14,307|ingestion|INFO|..\00_data\raw\purchases.csv| chunk3
+2026-02-15 18:09:29,611|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:09:29,741|ingestion|INFO|..\00_data\raw\purchases.csv| chunk4
+2026-02-15 18:09:45,092|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:09:45,217|ingestion|INFO|..\00_data\raw\purchases.csv| chunk5
+2026-02-15 18:10:00,727|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:10:00,852|ingestion|INFO|..\00_data\raw\purchases.csv| chunk6
+2026-02-15 18:10:19,009|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:10:19,214|ingestion|INFO|..\00_data\raw\purchases.csv| chunk7
+2026-02-15 18:10:35,863|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:10:36,017|ingestion|INFO|..\00_data\raw\purchases.csv| chunk8
+2026-02-15 18:10:51,078|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:10:51,206|ingestion|INFO|..\00_data\raw\purchases.csv| chunk9
+2026-02-15 18:11:07,712|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:11:07,886|ingestion|INFO|..\00_data\raw\purchases.csv| chunk10
+2026-02-15 18:11:22,914|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:11:23,038|ingestion|INFO|..\00_data\raw\purchases.csv| chunk11
+2026-02-15 18:11:37,855|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:11:37,987|ingestion|INFO|..\00_data\raw\purchases.csv| chunk12
+2026-02-15 18:11:53,054|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:11:53,189|ingestion|INFO|..\00_data\raw\purchases.csv| chunk13
+2026-02-15 18:12:09,590|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:12:09,711|ingestion|INFO|..\00_data\raw\purchases.csv| chunk14
+2026-02-15 18:12:25,582|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:12:25,717|ingestion|INFO|..\00_data\raw\purchases.csv| chunk15
+2026-02-15 18:12:40,744|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:12:40,870|ingestion|INFO|..\00_data\raw\purchases.csv| chunk16
+2026-02-15 18:12:55,219|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:12:55,342|ingestion|INFO|..\00_data\raw\purchases.csv| chunk17
+2026-02-15 18:13:11,442|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:13:11,646|ingestion|INFO|..\00_data\raw\purchases.csv| chunk18
+2026-02-15 18:13:26,780|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:13:26,909|ingestion|INFO|..\00_data\raw\purchases.csv| chunk19
+2026-02-15 18:13:42,836|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:13:43,013|ingestion|INFO|..\00_data\raw\purchases.csv| chunk20
+2026-02-15 18:13:58,418|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:13:58,553|ingestion|INFO|..\00_data\raw\purchases.csv| chunk21
+2026-02-15 18:14:13,957|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:14:14,083|ingestion|INFO|..\00_data\raw\purchases.csv| chunk22
+2026-02-15 18:14:30,165|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:14:30,305|ingestion|INFO|..\00_data\raw\purchases.csv| chunk23
+2026-02-15 18:14:46,126|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:14:46,341|ingestion|INFO|..\00_data\raw\purchases.csv| chunk24
+2026-02-15 18:15:07,982|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:15:08,161|ingestion|INFO|..\00_data\raw\purchases.csv| chunk25
+2026-02-15 18:15:29,859|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:15:30,014|ingestion|INFO|..\00_data\raw\purchases.csv| chunk26
+2026-02-15 18:15:53,956|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:15:54,106|ingestion|INFO|..\00_data\raw\purchases.csv| chunk27
+2026-02-15 18:16:11,831|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:16:11,986|ingestion|INFO|..\00_data\raw\purchases.csv| chunk28
+2026-02-15 18:16:28,204|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:16:28,433|ingestion|INFO|..\00_data\raw\purchases.csv| chunk29
+2026-02-15 18:16:42,192|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:16:42,318|ingestion|INFO|..\00_data\raw\purchases.csv| chunk30
+2026-02-15 18:16:56,986|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:16:57,093|ingestion|INFO|..\00_data\raw\purchases.csv| chunk31
+2026-02-15 18:17:11,510|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:17:11,637|ingestion|INFO|..\00_data\raw\purchases.csv| chunk32
+2026-02-15 18:17:24,751|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:17:24,888|ingestion|INFO|..\00_data\raw\purchases.csv| chunk33
+2026-02-15 18:17:37,361|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:17:37,507|ingestion|INFO|..\00_data\raw\purchases.csv| chunk34
+2026-02-15 18:17:49,869|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:17:49,971|ingestion|INFO|..\00_data\raw\purchases.csv| chunk35
+2026-02-15 18:18:01,836|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:18:01,950|ingestion|INFO|..\00_data\raw\purchases.csv| chunk36
+2026-02-15 18:18:13,295|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:18:13,398|ingestion|INFO|..\00_data\raw\purchases.csv| chunk37
+2026-02-15 18:18:25,673|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:18:25,831|ingestion|INFO|..\00_data\raw\purchases.csv| chunk38
+2026-02-15 18:18:37,628|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:18:37,747|ingestion|INFO|..\00_data\raw\purchases.csv| chunk39
+2026-02-15 18:18:49,110|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:18:49,214|ingestion|INFO|..\00_data\raw\purchases.csv| chunk40
+2026-02-15 18:19:00,723|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:19:00,846|ingestion|INFO|..\00_data\raw\purchases.csv| chunk41
+2026-02-15 18:19:12,593|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:19:12,700|ingestion|INFO|..\00_data\raw\purchases.csv| chunk42
+2026-02-15 18:19:23,758|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:19:23,891|ingestion|INFO|..\00_data\raw\purchases.csv| chunk43
+2026-02-15 18:19:35,041|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:19:35,140|ingestion|INFO|..\00_data\raw\purchases.csv| chunk44
+2026-02-15 18:19:46,208|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:19:46,314|ingestion|INFO|..\00_data\raw\purchases.csv| chunk45
+2026-02-15 18:19:57,231|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:19:57,323|ingestion|INFO|..\00_data\raw\purchases.csv| chunk46
+2026-02-15 18:20:08,530|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:20:08,626|ingestion|INFO|..\00_data\raw\purchases.csv| chunk47
+2026-02-15 18:20:19,604|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:20:19,662|ingestion|INFO|..\00_data\raw\purchases.csv| chunk48
+2026-02-15 18:20:24,489|ingestion|INFO|purchases.csv ingestion complete
+2026-02-15 18:20:24,496|__main__|INFO|Discovered purchase_prices.csv--->stg_purchase_prices
+2026-02-15 18:20:24,499|db|INFO|Database Engine Created
+2026-02-15 18:20:24,499|ingestion|INFO|ingesting ..\00_data\raw\purchase_prices.csv--> stg_purchase_prices
+2026-02-15 18:20:24,519|ingestion|INFO|..\00_data\raw\purchase_prices.csv| chunk1
+2026-02-15 18:20:26,159|ingestion|INFO|purchase_prices.csv ingestion complete
+2026-02-15 18:20:26,160|__main__|INFO|Discovered sales.csv--->stg_sales
+2026-02-15 18:20:26,160|db|INFO|Database Engine Created
+2026-02-15 18:20:26,160|ingestion|INFO|ingesting ..\00_data\raw\sales.csv--> stg_sales
+2026-02-15 18:20:26,248|ingestion|INFO|..\00_data\raw\sales.csv| chunk1
+2026-02-15 18:20:36,219|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:20:36,295|ingestion|INFO|..\00_data\raw\sales.csv| chunk2
+2026-02-15 18:20:46,200|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:20:46,280|ingestion|INFO|..\00_data\raw\sales.csv| chunk3
+2026-02-15 18:20:56,194|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:20:56,273|ingestion|INFO|..\00_data\raw\sales.csv| chunk4
+2026-02-15 18:21:06,085|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:21:06,162|ingestion|INFO|..\00_data\raw\sales.csv| chunk5
+2026-02-15 18:21:16,906|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:21:16,990|ingestion|INFO|..\00_data\raw\sales.csv| chunk6
+2026-02-15 18:21:27,008|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:21:27,088|ingestion|INFO|..\00_data\raw\sales.csv| chunk7
+2026-02-15 18:21:36,760|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:21:36,841|ingestion|INFO|..\00_data\raw\sales.csv| chunk8
+2026-02-15 18:21:46,835|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:21:46,912|ingestion|INFO|..\00_data\raw\sales.csv| chunk9
+2026-02-15 18:21:56,700|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:21:56,780|ingestion|INFO|..\00_data\raw\sales.csv| chunk10
+2026-02-15 18:22:06,406|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:22:06,484|ingestion|INFO|..\00_data\raw\sales.csv| chunk11
+2026-02-15 18:22:16,327|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:22:16,406|ingestion|INFO|..\00_data\raw\sales.csv| chunk12
+2026-02-15 18:22:26,170|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:22:26,246|ingestion|INFO|..\00_data\raw\sales.csv| chunk13
+2026-02-15 18:22:35,978|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:22:36,058|ingestion|INFO|..\00_data\raw\sales.csv| chunk14
+2026-02-15 18:22:45,783|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:22:45,859|ingestion|INFO|..\00_data\raw\sales.csv| chunk15
+2026-02-15 18:22:55,576|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:22:55,656|ingestion|INFO|..\00_data\raw\sales.csv| chunk16
+2026-02-15 18:23:05,616|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:23:05,696|ingestion|INFO|..\00_data\raw\sales.csv| chunk17
+2026-02-15 18:23:16,677|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:23:16,783|ingestion|INFO|..\00_data\raw\sales.csv| chunk18
+2026-02-15 18:23:27,821|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:23:27,907|ingestion|INFO|..\00_data\raw\sales.csv| chunk19
+2026-02-15 18:23:39,502|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:23:39,587|ingestion|INFO|..\00_data\raw\sales.csv| chunk20
+2026-02-15 18:23:50,030|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:23:50,112|ingestion|INFO|..\00_data\raw\sales.csv| chunk21
+2026-02-15 18:24:00,896|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:24:00,991|ingestion|INFO|..\00_data\raw\sales.csv| chunk22
+2026-02-15 18:24:11,637|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:24:11,723|ingestion|INFO|..\00_data\raw\sales.csv| chunk23
+2026-02-15 18:24:22,041|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:24:22,116|ingestion|INFO|..\00_data\raw\sales.csv| chunk24
+2026-02-15 18:24:34,047|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:24:34,147|ingestion|INFO|..\00_data\raw\sales.csv| chunk25
+2026-02-15 18:24:44,749|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:24:44,844|ingestion|INFO|..\00_data\raw\sales.csv| chunk26
+2026-02-15 18:24:55,158|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:24:55,244|ingestion|INFO|..\00_data\raw\sales.csv| chunk27
+2026-02-15 18:25:06,942|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:25:07,053|ingestion|INFO|..\00_data\raw\sales.csv| chunk28
+2026-02-15 18:25:18,453|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:25:18,571|ingestion|INFO|..\00_data\raw\sales.csv| chunk29
+2026-02-15 18:25:29,354|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:25:29,435|ingestion|INFO|..\00_data\raw\sales.csv| chunk30
+2026-02-15 18:25:39,872|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:25:39,964|ingestion|INFO|..\00_data\raw\sales.csv| chunk31
+2026-02-15 18:25:50,184|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:25:50,264|ingestion|INFO|..\00_data\raw\sales.csv| chunk32
+2026-02-15 18:26:01,460|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:26:01,543|ingestion|INFO|..\00_data\raw\sales.csv| chunk33
+2026-02-15 18:26:14,382|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:26:14,490|ingestion|INFO|..\00_data\raw\sales.csv| chunk34
+2026-02-15 18:26:26,894|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:26:26,997|ingestion|INFO|..\00_data\raw\sales.csv| chunk35
+2026-02-15 18:26:37,630|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:26:37,723|ingestion|INFO|..\00_data\raw\sales.csv| chunk36
+2026-02-15 18:26:48,921|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:26:49,014|ingestion|INFO|..\00_data\raw\sales.csv| chunk37
+2026-02-15 18:27:00,749|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:27:00,847|ingestion|INFO|..\00_data\raw\sales.csv| chunk38
+2026-02-15 18:27:12,340|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:27:12,429|ingestion|INFO|..\00_data\raw\sales.csv| chunk39
+2026-02-15 18:27:23,927|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:27:24,007|ingestion|INFO|..\00_data\raw\sales.csv| chunk40
+2026-02-15 18:27:34,838|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:27:34,924|ingestion|INFO|..\00_data\raw\sales.csv| chunk41
+2026-02-15 18:27:46,202|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:27:46,297|ingestion|INFO|..\00_data\raw\sales.csv| chunk42
+2026-02-15 18:27:58,078|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:27:58,185|ingestion|INFO|..\00_data\raw\sales.csv| chunk43
+2026-02-15 18:28:09,489|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:28:09,574|ingestion|INFO|..\00_data\raw\sales.csv| chunk44
+2026-02-15 18:28:19,887|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:28:19,983|ingestion|INFO|..\00_data\raw\sales.csv| chunk45
+2026-02-15 18:28:31,540|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:28:31,637|ingestion|INFO|..\00_data\raw\sales.csv| chunk46
+2026-02-15 18:28:42,191|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:28:42,278|ingestion|INFO|..\00_data\raw\sales.csv| chunk47
+2026-02-15 18:28:52,703|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:28:52,787|ingestion|INFO|..\00_data\raw\sales.csv| chunk48
+2026-02-15 18:29:04,717|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:29:04,798|ingestion|INFO|..\00_data\raw\sales.csv| chunk49
+2026-02-15 18:29:15,555|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:29:15,643|ingestion|INFO|..\00_data\raw\sales.csv| chunk50
+2026-02-15 18:29:25,615|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:29:25,700|ingestion|INFO|..\00_data\raw\sales.csv| chunk51
+2026-02-15 18:29:36,089|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:29:36,164|ingestion|INFO|..\00_data\raw\sales.csv| chunk52
+2026-02-15 18:29:46,610|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:29:46,702|ingestion|INFO|..\00_data\raw\sales.csv| chunk53
+2026-02-15 18:29:57,199|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:29:57,274|ingestion|INFO|..\00_data\raw\sales.csv| chunk54
+2026-02-15 18:30:07,872|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:30:07,951|ingestion|INFO|..\00_data\raw\sales.csv| chunk55
+2026-02-15 18:30:18,677|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:30:18,768|ingestion|INFO|..\00_data\raw\sales.csv| chunk56
+2026-02-15 18:30:30,116|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:30:30,204|ingestion|INFO|..\00_data\raw\sales.csv| chunk57
+2026-02-15 18:30:40,730|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:30:40,815|ingestion|INFO|..\00_data\raw\sales.csv| chunk58
+2026-02-15 18:30:51,404|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:30:51,483|ingestion|INFO|..\00_data\raw\sales.csv| chunk59
+2026-02-15 18:31:01,901|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:31:01,984|ingestion|INFO|..\00_data\raw\sales.csv| chunk60
+2026-02-15 18:31:12,192|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:31:12,274|ingestion|INFO|..\00_data\raw\sales.csv| chunk61
+2026-02-15 18:31:22,214|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:31:22,296|ingestion|INFO|..\00_data\raw\sales.csv| chunk62
+2026-02-15 18:31:32,262|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:31:32,339|ingestion|INFO|..\00_data\raw\sales.csv| chunk63
+2026-02-15 18:31:42,123|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:31:42,201|ingestion|INFO|..\00_data\raw\sales.csv| chunk64
+2026-02-15 18:31:52,109|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:31:52,183|ingestion|INFO|..\00_data\raw\sales.csv| chunk65
+2026-02-15 18:32:02,082|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:32:02,165|ingestion|INFO|..\00_data\raw\sales.csv| chunk66
+2026-02-15 18:32:11,721|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:32:11,798|ingestion|INFO|..\00_data\raw\sales.csv| chunk67
+2026-02-15 18:32:21,584|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:32:21,660|ingestion|INFO|..\00_data\raw\sales.csv| chunk68
+2026-02-15 18:32:31,571|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:32:31,647|ingestion|INFO|..\00_data\raw\sales.csv| chunk69
+2026-02-15 18:32:41,350|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:32:41,427|ingestion|INFO|..\00_data\raw\sales.csv| chunk70
+2026-02-15 18:32:51,123|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:32:51,201|ingestion|INFO|..\00_data\raw\sales.csv| chunk71
+2026-02-15 18:33:01,150|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:33:01,234|ingestion|INFO|..\00_data\raw\sales.csv| chunk72
+2026-02-15 18:33:11,212|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:33:11,290|ingestion|INFO|..\00_data\raw\sales.csv| chunk73
+2026-02-15 18:33:21,017|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:33:21,093|ingestion|INFO|..\00_data\raw\sales.csv| chunk74
+2026-02-15 18:33:30,650|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:33:30,725|ingestion|INFO|..\00_data\raw\sales.csv| chunk75
+2026-02-15 18:33:40,489|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:33:40,567|ingestion|INFO|..\00_data\raw\sales.csv| chunk76
+2026-02-15 18:33:50,272|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:33:50,352|ingestion|INFO|..\00_data\raw\sales.csv| chunk77
+2026-02-15 18:34:00,450|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:34:00,541|ingestion|INFO|..\00_data\raw\sales.csv| chunk78
+2026-02-15 18:34:10,320|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:34:10,400|ingestion|INFO|..\00_data\raw\sales.csv| chunk79
+2026-02-15 18:34:20,205|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:34:20,284|ingestion|INFO|..\00_data\raw\sales.csv| chunk80
+2026-02-15 18:34:30,670|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:34:30,749|ingestion|INFO|..\00_data\raw\sales.csv| chunk81
+2026-02-15 18:34:40,762|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:34:40,844|ingestion|INFO|..\00_data\raw\sales.csv| chunk82
+2026-02-15 18:34:50,547|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:34:50,622|ingestion|INFO|..\00_data\raw\sales.csv| chunk83
+2026-02-15 18:35:00,851|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:35:00,948|ingestion|INFO|..\00_data\raw\sales.csv| chunk84
+2026-02-15 18:35:10,651|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:35:10,728|ingestion|INFO|..\00_data\raw\sales.csv| chunk85
+2026-02-15 18:35:20,889|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:35:20,977|ingestion|INFO|..\00_data\raw\sales.csv| chunk86
+2026-02-15 18:35:30,700|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:35:30,773|ingestion|INFO|..\00_data\raw\sales.csv| chunk87
+2026-02-15 18:35:40,957|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:35:41,034|ingestion|INFO|..\00_data\raw\sales.csv| chunk88
+2026-02-15 18:35:51,368|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:35:51,465|ingestion|INFO|..\00_data\raw\sales.csv| chunk89
+2026-02-15 18:36:01,773|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:36:01,856|ingestion|INFO|..\00_data\raw\sales.csv| chunk90
+2026-02-15 18:36:11,520|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:36:11,596|ingestion|INFO|..\00_data\raw\sales.csv| chunk91
+2026-02-15 18:36:21,470|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:36:21,551|ingestion|INFO|..\00_data\raw\sales.csv| chunk92
+2026-02-15 18:36:31,416|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:36:31,495|ingestion|INFO|..\00_data\raw\sales.csv| chunk93
+2026-02-15 18:36:41,219|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:36:41,300|ingestion|INFO|..\00_data\raw\sales.csv| chunk94
+2026-02-15 18:36:51,049|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:36:51,129|ingestion|INFO|..\00_data\raw\sales.csv| chunk95
+2026-02-15 18:37:01,072|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:37:01,161|ingestion|INFO|..\00_data\raw\sales.csv| chunk96
+2026-02-15 18:37:11,060|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:37:11,134|ingestion|INFO|..\00_data\raw\sales.csv| chunk97
+2026-02-15 18:37:20,799|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:37:20,880|ingestion|INFO|..\00_data\raw\sales.csv| chunk98
+2026-02-15 18:37:30,443|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:37:30,517|ingestion|INFO|..\00_data\raw\sales.csv| chunk99
+2026-02-15 18:37:40,237|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:37:40,314|ingestion|INFO|..\00_data\raw\sales.csv| chunk100
+2026-02-15 18:37:50,021|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:37:50,099|ingestion|INFO|..\00_data\raw\sales.csv| chunk101
+2026-02-15 18:37:59,781|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:37:59,857|ingestion|INFO|..\00_data\raw\sales.csv| chunk102
+2026-02-15 18:38:09,668|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:38:09,746|ingestion|INFO|..\00_data\raw\sales.csv| chunk103
+2026-02-15 18:38:19,522|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:38:19,600|ingestion|INFO|..\00_data\raw\sales.csv| chunk104
+2026-02-15 18:38:29,673|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:38:29,752|ingestion|INFO|..\00_data\raw\sales.csv| chunk105
+2026-02-15 18:38:39,639|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:38:39,716|ingestion|INFO|..\00_data\raw\sales.csv| chunk106
+2026-02-15 18:38:49,529|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:38:49,606|ingestion|INFO|..\00_data\raw\sales.csv| chunk107
+2026-02-15 18:38:59,384|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:38:59,460|ingestion|INFO|..\00_data\raw\sales.csv| chunk108
+2026-02-15 18:39:09,308|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:39:09,380|ingestion|INFO|..\00_data\raw\sales.csv| chunk109
+2026-02-15 18:39:19,095|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:39:19,171|ingestion|INFO|..\00_data\raw\sales.csv| chunk110
+2026-02-15 18:39:28,885|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:39:28,962|ingestion|INFO|..\00_data\raw\sales.csv| chunk111
+2026-02-15 18:39:38,793|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:39:38,868|ingestion|INFO|..\00_data\raw\sales.csv| chunk112
+2026-02-15 18:39:49,014|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:39:49,097|ingestion|INFO|..\00_data\raw\sales.csv| chunk113
+2026-02-15 18:39:59,235|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:39:59,315|ingestion|INFO|..\00_data\raw\sales.csv| chunk114
+2026-02-15 18:40:09,036|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:40:09,118|ingestion|INFO|..\00_data\raw\sales.csv| chunk115
+2026-02-15 18:40:18,935|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:40:19,013|ingestion|INFO|..\00_data\raw\sales.csv| chunk116
+2026-02-15 18:40:28,715|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:40:28,794|ingestion|INFO|..\00_data\raw\sales.csv| chunk117
+2026-02-15 18:40:38,601|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:40:38,677|ingestion|INFO|..\00_data\raw\sales.csv| chunk118
+2026-02-15 18:40:48,552|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:40:48,633|ingestion|INFO|..\00_data\raw\sales.csv| chunk119
+2026-02-15 18:40:58,485|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:40:58,560|ingestion|INFO|..\00_data\raw\sales.csv| chunk120
+2026-02-15 18:41:08,577|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:41:08,670|ingestion|INFO|..\00_data\raw\sales.csv| chunk121
+2026-02-15 18:41:18,406|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:41:18,485|ingestion|INFO|..\00_data\raw\sales.csv| chunk122
+2026-02-15 18:41:28,303|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:41:28,381|ingestion|INFO|..\00_data\raw\sales.csv| chunk123
+2026-02-15 18:41:38,230|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:41:38,305|ingestion|INFO|..\00_data\raw\sales.csv| chunk124
+2026-02-15 18:41:48,090|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:41:48,165|ingestion|INFO|..\00_data\raw\sales.csv| chunk125
+2026-02-15 18:41:58,098|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:41:58,178|ingestion|INFO|..\00_data\raw\sales.csv| chunk126
+2026-02-15 18:42:08,097|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:42:08,180|ingestion|INFO|..\00_data\raw\sales.csv| chunk127
+2026-02-15 18:42:17,924|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:42:18,002|ingestion|INFO|..\00_data\raw\sales.csv| chunk128
+2026-02-15 18:42:27,890|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:42:27,969|ingestion|INFO|..\00_data\raw\sales.csv| chunk129
+2026-02-15 18:42:37,811|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:42:37,891|ingestion|INFO|..\00_data\raw\sales.csv| chunk130
+2026-02-15 18:42:47,624|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:42:47,702|ingestion|INFO|..\00_data\raw\sales.csv| chunk131
+2026-02-15 18:42:58,347|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:42:58,423|ingestion|INFO|..\00_data\raw\sales.csv| chunk132
+2026-02-15 18:43:09,035|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:43:09,125|ingestion|INFO|..\00_data\raw\sales.csv| chunk133
+2026-02-15 18:43:19,509|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:43:19,589|ingestion|INFO|..\00_data\raw\sales.csv| chunk134
+2026-02-15 18:43:29,772|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:43:29,850|ingestion|INFO|..\00_data\raw\sales.csv| chunk135
+2026-02-15 18:43:39,850|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:43:39,928|ingestion|INFO|..\00_data\raw\sales.csv| chunk136
+2026-02-15 18:43:49,744|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:43:49,822|ingestion|INFO|..\00_data\raw\sales.csv| chunk137
+2026-02-15 18:43:59,453|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:43:59,528|ingestion|INFO|..\00_data\raw\sales.csv| chunk138
+2026-02-15 18:44:09,116|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:44:09,189|ingestion|INFO|..\00_data\raw\sales.csv| chunk139
+2026-02-15 18:44:19,082|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:44:19,155|ingestion|INFO|..\00_data\raw\sales.csv| chunk140
+2026-02-15 18:44:28,906|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:44:28,978|ingestion|INFO|..\00_data\raw\sales.csv| chunk141
+2026-02-15 18:44:38,626|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:44:38,704|ingestion|INFO|..\00_data\raw\sales.csv| chunk142
+2026-02-15 18:44:48,409|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:44:48,484|ingestion|INFO|..\00_data\raw\sales.csv| chunk143
+2026-02-15 18:44:58,129|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:44:58,199|ingestion|INFO|..\00_data\raw\sales.csv| chunk144
+2026-02-15 18:45:08,310|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:45:08,386|ingestion|INFO|..\00_data\raw\sales.csv| chunk145
+2026-02-15 18:45:18,039|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:45:18,113|ingestion|INFO|..\00_data\raw\sales.csv| chunk146
+2026-02-15 18:45:27,777|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:45:27,855|ingestion|INFO|..\00_data\raw\sales.csv| chunk147
+2026-02-15 18:45:37,583|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:45:37,667|ingestion|INFO|..\00_data\raw\sales.csv| chunk148
+2026-02-15 18:45:47,576|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:45:47,669|ingestion|INFO|..\00_data\raw\sales.csv| chunk149
+2026-02-15 18:45:57,513|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:45:57,599|ingestion|INFO|..\00_data\raw\sales.csv| chunk150
+2026-02-15 18:46:07,468|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:46:07,551|ingestion|INFO|..\00_data\raw\sales.csv| chunk151
+2026-02-15 18:46:17,301|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:46:17,383|ingestion|INFO|..\00_data\raw\sales.csv| chunk152
+2026-02-15 18:46:27,230|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:46:27,309|ingestion|INFO|..\00_data\raw\sales.csv| chunk153
+2026-02-15 18:46:37,118|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:46:37,200|ingestion|INFO|..\00_data\raw\sales.csv| chunk154
+2026-02-15 18:46:46,696|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:46:46,767|ingestion|INFO|..\00_data\raw\sales.csv| chunk155
+2026-02-15 18:46:56,496|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:46:56,568|ingestion|INFO|..\00_data\raw\sales.csv| chunk156
+2026-02-15 18:47:06,539|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:47:06,614|ingestion|INFO|..\00_data\raw\sales.csv| chunk157
+2026-02-15 18:47:16,308|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:47:16,384|ingestion|INFO|..\00_data\raw\sales.csv| chunk158
+2026-02-15 18:47:26,073|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:47:26,146|ingestion|INFO|..\00_data\raw\sales.csv| chunk159
+2026-02-15 18:47:35,860|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:47:35,940|ingestion|INFO|..\00_data\raw\sales.csv| chunk160
+2026-02-15 18:47:45,944|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:47:46,020|ingestion|INFO|..\00_data\raw\sales.csv| chunk161
+2026-02-15 18:47:55,812|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:47:55,887|ingestion|INFO|..\00_data\raw\sales.csv| chunk162
+2026-02-15 18:48:05,853|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:48:05,929|ingestion|INFO|..\00_data\raw\sales.csv| chunk163
+2026-02-15 18:48:15,676|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:48:15,748|ingestion|INFO|..\00_data\raw\sales.csv| chunk164
+2026-02-15 18:48:25,412|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:48:25,485|ingestion|INFO|..\00_data\raw\sales.csv| chunk165
+2026-02-15 18:48:35,180|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:48:35,253|ingestion|INFO|..\00_data\raw\sales.csv| chunk166
+2026-02-15 18:48:44,896|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:48:44,969|ingestion|INFO|..\00_data\raw\sales.csv| chunk167
+2026-02-15 18:48:54,677|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:48:54,754|ingestion|INFO|..\00_data\raw\sales.csv| chunk168
+2026-02-15 18:49:06,328|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:49:06,422|ingestion|INFO|..\00_data\raw\sales.csv| chunk169
+2026-02-15 18:49:16,439|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:49:16,523|ingestion|INFO|..\00_data\raw\sales.csv| chunk170
+2026-02-15 18:49:26,099|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:49:26,172|ingestion|INFO|..\00_data\raw\sales.csv| chunk171
+2026-02-15 18:49:35,916|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:49:35,988|ingestion|INFO|..\00_data\raw\sales.csv| chunk172
+2026-02-15 18:49:45,665|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:49:45,739|ingestion|INFO|..\00_data\raw\sales.csv| chunk173
+2026-02-15 18:49:55,473|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:49:55,550|ingestion|INFO|..\00_data\raw\sales.csv| chunk174
+2026-02-15 18:50:05,450|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:50:05,525|ingestion|INFO|..\00_data\raw\sales.csv| chunk175
+2026-02-15 18:50:15,342|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:50:15,417|ingestion|INFO|..\00_data\raw\sales.csv| chunk176
+2026-02-15 18:50:25,379|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:50:25,457|ingestion|INFO|..\00_data\raw\sales.csv| chunk177
+2026-02-15 18:50:35,170|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:50:35,269|ingestion|INFO|..\00_data\raw\sales.csv| chunk178
+2026-02-15 18:50:44,892|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:50:44,975|ingestion|INFO|..\00_data\raw\sales.csv| chunk179
+2026-02-15 18:50:54,840|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:50:54,918|ingestion|INFO|..\00_data\raw\sales.csv| chunk180
+2026-02-15 18:51:06,226|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:51:06,312|ingestion|INFO|..\00_data\raw\sales.csv| chunk181
+2026-02-15 18:51:16,274|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:51:16,361|ingestion|INFO|..\00_data\raw\sales.csv| chunk182
+2026-02-15 18:51:26,730|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:51:26,843|ingestion|INFO|..\00_data\raw\sales.csv| chunk183
+2026-02-15 18:51:36,815|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:51:36,892|ingestion|INFO|..\00_data\raw\sales.csv| chunk184
+2026-02-15 18:51:47,512|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:51:47,592|ingestion|INFO|..\00_data\raw\sales.csv| chunk185
+2026-02-15 18:51:58,408|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:51:58,493|ingestion|INFO|..\00_data\raw\sales.csv| chunk186
+2026-02-15 18:52:08,808|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:52:08,892|ingestion|INFO|..\00_data\raw\sales.csv| chunk187
+2026-02-15 18:52:19,041|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:52:19,119|ingestion|INFO|..\00_data\raw\sales.csv| chunk188
+2026-02-15 18:52:29,108|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:52:29,184|ingestion|INFO|..\00_data\raw\sales.csv| chunk189
+2026-02-15 18:52:38,935|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:52:39,010|ingestion|INFO|..\00_data\raw\sales.csv| chunk190
+2026-02-15 18:52:49,065|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:52:49,193|ingestion|INFO|..\00_data\raw\sales.csv| chunk191
+2026-02-15 18:52:58,961|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:52:59,049|ingestion|INFO|..\00_data\raw\sales.csv| chunk192
+2026-02-15 18:53:09,133|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:53:09,225|ingestion|INFO|..\00_data\raw\sales.csv| chunk193
+2026-02-15 18:53:19,351|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:53:19,433|ingestion|INFO|..\00_data\raw\sales.csv| chunk194
+2026-02-15 18:53:29,181|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:53:29,272|ingestion|INFO|..\00_data\raw\sales.csv| chunk195
+2026-02-15 18:53:39,205|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:53:39,300|ingestion|INFO|..\00_data\raw\sales.csv| chunk196
+2026-02-15 18:53:49,641|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:53:49,733|ingestion|INFO|..\00_data\raw\sales.csv| chunk197
+2026-02-15 18:54:00,259|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:54:00,361|ingestion|INFO|..\00_data\raw\sales.csv| chunk198
+2026-02-15 18:54:10,800|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:54:10,893|ingestion|INFO|..\00_data\raw\sales.csv| chunk199
+2026-02-15 18:54:21,046|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:54:21,121|ingestion|INFO|..\00_data\raw\sales.csv| chunk200
+2026-02-15 18:54:31,193|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:54:31,271|ingestion|INFO|..\00_data\raw\sales.csv| chunk201
+2026-02-15 18:54:41,050|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:54:41,126|ingestion|INFO|..\00_data\raw\sales.csv| chunk202
+2026-02-15 18:54:50,828|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:54:50,904|ingestion|INFO|..\00_data\raw\sales.csv| chunk203
+2026-02-15 18:55:01,054|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:55:01,148|ingestion|INFO|..\00_data\raw\sales.csv| chunk204
+2026-02-15 18:55:10,964|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:55:11,048|ingestion|INFO|..\00_data\raw\sales.csv| chunk205
+2026-02-15 18:55:20,884|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:55:20,971|ingestion|INFO|..\00_data\raw\sales.csv| chunk206
+2026-02-15 18:55:30,949|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:55:31,032|ingestion|INFO|..\00_data\raw\sales.csv| chunk207
+2026-02-15 18:55:40,799|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:55:40,876|ingestion|INFO|..\00_data\raw\sales.csv| chunk208
+2026-02-15 18:55:51,006|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:55:51,092|ingestion|INFO|..\00_data\raw\sales.csv| chunk209
+2026-02-15 18:56:01,170|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:56:01,265|ingestion|INFO|..\00_data\raw\sales.csv| chunk210
+2026-02-15 18:56:10,893|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:56:10,977|ingestion|INFO|..\00_data\raw\sales.csv| chunk211
+2026-02-15 18:56:20,728|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:56:20,811|ingestion|INFO|..\00_data\raw\sales.csv| chunk212
+2026-02-15 18:56:30,589|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:56:30,668|ingestion|INFO|..\00_data\raw\sales.csv| chunk213
+2026-02-15 18:56:40,608|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:56:40,696|ingestion|INFO|..\00_data\raw\sales.csv| chunk214
+2026-02-15 18:56:50,526|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:56:50,610|ingestion|INFO|..\00_data\raw\sales.csv| chunk215
+2026-02-15 18:57:00,350|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:57:00,446|ingestion|INFO|..\00_data\raw\sales.csv| chunk216
+2026-02-15 18:57:10,440|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:57:10,527|ingestion|INFO|..\00_data\raw\sales.csv| chunk217
+2026-02-15 18:57:20,271|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:57:20,359|ingestion|INFO|..\00_data\raw\sales.csv| chunk218
+2026-02-15 18:57:30,015|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:57:30,095|ingestion|INFO|..\00_data\raw\sales.csv| chunk219
+2026-02-15 18:57:39,895|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:57:39,971|ingestion|INFO|..\00_data\raw\sales.csv| chunk220
+2026-02-15 18:57:49,701|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:57:49,776|ingestion|INFO|..\00_data\raw\sales.csv| chunk221
+2026-02-15 18:57:59,662|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:57:59,748|ingestion|INFO|..\00_data\raw\sales.csv| chunk222
+2026-02-15 18:58:09,763|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:58:09,848|ingestion|INFO|..\00_data\raw\sales.csv| chunk223
+2026-02-15 18:58:19,612|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:58:19,696|ingestion|INFO|..\00_data\raw\sales.csv| chunk224
+2026-02-15 18:58:29,766|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:58:29,868|ingestion|INFO|..\00_data\raw\sales.csv| chunk225
+2026-02-15 18:58:39,787|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:58:39,874|ingestion|INFO|..\00_data\raw\sales.csv| chunk226
+2026-02-15 18:58:49,633|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:58:49,709|ingestion|INFO|..\00_data\raw\sales.csv| chunk227
+2026-02-15 18:58:59,487|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:58:59,569|ingestion|INFO|..\00_data\raw\sales.csv| chunk228
+2026-02-15 18:59:09,495|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:59:09,580|ingestion|INFO|..\00_data\raw\sales.csv| chunk229
+2026-02-15 18:59:19,315|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:59:19,394|ingestion|INFO|..\00_data\raw\sales.csv| chunk230
+2026-02-15 18:59:29,224|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:59:29,303|ingestion|INFO|..\00_data\raw\sales.csv| chunk231
+2026-02-15 18:59:39,189|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:59:39,276|ingestion|INFO|..\00_data\raw\sales.csv| chunk232
+2026-02-15 18:59:49,167|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:59:49,253|ingestion|INFO|..\00_data\raw\sales.csv| chunk233
+2026-02-15 18:59:58,987|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 18:59:59,074|ingestion|INFO|..\00_data\raw\sales.csv| chunk234
+2026-02-15 19:00:08,969|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:00:09,059|ingestion|INFO|..\00_data\raw\sales.csv| chunk235
+2026-02-15 19:00:18,896|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:00:18,981|ingestion|INFO|..\00_data\raw\sales.csv| chunk236
+2026-02-15 19:00:28,673|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:00:28,760|ingestion|INFO|..\00_data\raw\sales.csv| chunk237
+2026-02-15 19:00:38,672|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:00:38,756|ingestion|INFO|..\00_data\raw\sales.csv| chunk238
+2026-02-15 19:00:48,822|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:00:48,937|ingestion|INFO|..\00_data\raw\sales.csv| chunk239
+2026-02-15 19:00:58,827|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:00:58,911|ingestion|INFO|..\00_data\raw\sales.csv| chunk240
+2026-02-15 19:01:09,029|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:01:09,109|ingestion|INFO|..\00_data\raw\sales.csv| chunk241
+2026-02-15 19:01:18,919|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:01:18,999|ingestion|INFO|..\00_data\raw\sales.csv| chunk242
+2026-02-15 19:01:28,566|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:01:28,650|ingestion|INFO|..\00_data\raw\sales.csv| chunk243
+2026-02-15 19:01:38,484|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:01:38,577|ingestion|INFO|..\00_data\raw\sales.csv| chunk244
+2026-02-15 19:01:48,274|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:01:48,350|ingestion|INFO|..\00_data\raw\sales.csv| chunk245
+2026-02-15 19:01:58,135|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:01:58,214|ingestion|INFO|..\00_data\raw\sales.csv| chunk246
+2026-02-15 19:02:08,103|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:02:08,182|ingestion|INFO|..\00_data\raw\sales.csv| chunk247
+2026-02-15 19:02:17,931|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:02:18,008|ingestion|INFO|..\00_data\raw\sales.csv| chunk248
+2026-02-15 19:02:27,840|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:02:27,919|ingestion|INFO|..\00_data\raw\sales.csv| chunk249
+2026-02-15 19:02:37,651|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:02:37,727|ingestion|INFO|..\00_data\raw\sales.csv| chunk250
+2026-02-15 19:02:47,342|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:02:47,424|ingestion|INFO|..\00_data\raw\sales.csv| chunk251
+2026-02-15 19:02:57,250|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:02:57,340|ingestion|INFO|..\00_data\raw\sales.csv| chunk252
+2026-02-15 19:03:07,164|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:03:07,255|ingestion|INFO|..\00_data\raw\sales.csv| chunk253
+2026-02-15 19:03:16,943|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:03:17,023|ingestion|INFO|..\00_data\raw\sales.csv| chunk254
+2026-02-15 19:03:26,715|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:03:26,789|ingestion|INFO|..\00_data\raw\sales.csv| chunk255
+2026-02-15 19:03:36,563|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:03:36,637|ingestion|INFO|..\00_data\raw\sales.csv| chunk256
+2026-02-15 19:03:46,528|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:03:46,575|ingestion|INFO|..\00_data\raw\sales.csv| chunk257
+2026-02-15 19:03:51,261|ingestion|INFO|sales.csv ingestion complete
+2026-02-15 19:03:51,264|__main__|INFO|Discovered vendor_invoice.csv--->stg_vendor_invoice
+2026-02-15 19:03:51,265|db|INFO|Database Engine Created
+2026-02-15 19:03:51,265|ingestion|INFO|ingesting ..\00_data\raw\vendor_invoice.csv--> stg_vendor_invoice
+2026-02-15 19:03:51,276|ingestion|INFO|..\00_data\raw\vendor_invoice.csv| chunk1
+2026-02-15 19:03:52,108|ingestion|INFO|vendor_invoice.csv ingestion complete
+2026-02-15 19:03:52,109|__main__|INFO|Pipeline completed successfully

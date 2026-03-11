@@ -1,0 +1,31 @@
+.env
+.env*.
+# Ignore all .env files, but keep the example
+!.env.example
+
+config/db_config.env
+
+
+#python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode settings
+.vscode/
+
+# os files
+.DS_Store
+Thumbs.db
+
+# notebook temporary files
+*.layout
+
+# data files
+00_data/raw/*.csv
+00_data/outputs/*.csv
+!00_data/sample/*.csv
