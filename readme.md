@@ -323,7 +323,15 @@ Sales volume does **not significantly influence profit margins**.
 * Promote **Growth Opportunity Vendors** to increase revenue.
 * Reevaluate or discontinue **Underperforming Vendors**.
 * Monitor inventory risk from low sell-through vendors.
+---
 
+# Business Impact
+---------------
+* Profit increase: +$24.48M
+* Revenue growth: +5.16%
+* Margin improvement: +3.74 pp
+* Inventory reduction: -3.16%
+* Cash flow improvement: +$24.76M
 ---
 
 # Key Skills Demonstrated

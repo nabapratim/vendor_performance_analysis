@@ -1,8 +1,10 @@
 import logging
 from pathlib import Path
 from ingestion import ingestion_csv
-from extraction import load_base_data, load_all_kpis
+from run_pipeline import run_pipeline
+from db import get_engine
 
+engine = get_engine()
 
 #-----------------
 # Logging Setup
@@ -49,42 +51,6 @@ def run_csv_ingestion():
 
 
 #------------------------------
-# KPI Extraction
-#------------------------------
-
-def run_kpi_pipeline():
-    kpis = load_all_kpis()
-
-    for name, df in kpis.items():
-        
-        # save internal format
-        parquet_path = OUTPUT_DIR/f"{name}.parquet"
-        df.to_parquet(parquet_path, index=False)
-
-        # save presentation-friendly format
-        csv_path = OUTPUT_DIR/f"{name}.csv"
-        df.to_csv(csv_path, index=False)
-
-        logger.info(f"Saved KPI: {name}")
-
-
-#------------------------------
-# Base Processing
-#------------------------------
-
-def run_base_processing():
-    
-    total_rows = 0
-
-    for chunk in load_base_data():
-        total_rows += len(chunk)
-
-        if "order_value" in chunk.columns:
-            chunk['order_values'] = chunk["order_values"].clip(lower=0)
-    
-    logger.info(f"Processed {total_rows} base rows")
-
-#------------------------------
 # MAIN ORCHESTRATOR
 #------------------------------
 
@@ -92,11 +58,10 @@ def main():
 
     try:
         logger.info("Pipeline started")
-
+        # Ingest CSV files into the database
         run_csv_ingestion()
-        #run_kpi_pipeline()
-        #run_base_processing()
-
+        # Run the stored procedure to refresh the data warehouse
+        run_pipeline(engine, "refresh_warehouse")
         logger.info("Pipeline completed successfully")
     except Exception:
         logger.exception("Pipeline failed")
