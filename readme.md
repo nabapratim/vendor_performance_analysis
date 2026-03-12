@@ -7,7 +7,7 @@ This project builds an **end-to-end vendor performance analytics pipeline** usin
 The project demonstrates a complete analytics workflow:
 
 ```text
-Raw Data → Data Warehouse (Silver/Gold Layers) → Data Pipeline → Analysis → Insights
+Raw Data → Data Warehouse (Bronze/Silver/Gold Layers) → Data Pipeline → Analysis → Insights
 ```
 
 It combines **data engineering, analytics, and statistical validation** to answer key business questions about vendor performance.
@@ -176,9 +176,9 @@ Python scripts manage extraction, ingestion, and orchestration.
 
 ## Components
 
-**extraction.py**
+**run_pipeline.py**
 
-Extracts raw CSV data.
+Execute the database stored procedures that refresh Bronze, Silver and Gold layers.
 
 **ingestion.py**
 
