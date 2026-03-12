@@ -43,7 +43,7 @@ Vendor-Analytics
 │   │   ├── purchase_prices.csv
 │   │   ├── sales.csv
 │   │   └── vendor_invoice.csv
-│   └── outputs
+│   └── sample
 │
 ├── 01_sql
 │   ├── 01_silver_layer
@@ -62,17 +62,19 @@ Vendor-Analytics
 │
 ├── 02_src
 │   ├── extraction.py
-│   ├── ingestion.py
+│   ├── run_pipeline.py
 │   ├── db.py
 │   └── main.py
 │
-├── 04_notebooks
+├── 03_notebooks
 │   └── performance_analysis.ipynb
 │
+├──04_reports
+|   └──reports.md
 ├── config
-│   └── db_config.env
-│
-└── reports
+    └── db_config.env
+    └── .env.example
+
 ```
 
 ---
